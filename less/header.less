@@ -1,0 +1,70 @@
+@backgroundImage: url("src/img/mainbg.jpg");
+@background: #242424;
+@toggleMenuBackgroundColor:#826550;
+@menuPadding: 10px 10px;
+
+@import "index.less";
+
+.header{
+	display:flex;
+	flex-direction:column;
+	background-color: @background;
+	&__logo-image{
+		margin-top:30px;
+		margin-bottom:25px;
+	}
+	&__main-menu{
+		.resetMarginPadding();
+		height:50px;
+		
+	}
+}
+
+.main-menu{
+	background-color:@toggleMenuBackgroundColor;
+	position:relative;
+	&__nav-menu{
+		.setListView();
+	}
+	&__user-menu{
+		.setListView();
+	}
+	&__item-lable{
+
+	}
+	&__toggle-button{
+		position:absolute;
+		top:0px;
+		right:0px;
+		box-sizing:border-box;
+		width:70px;
+		height:50px;
+		background-color:#6a4d38;
+		padding: 15px 15px;
+	}
+	&__toggle-button-icon{}
+	&__item{
+		display:none;
+		padding-left:0px;
+		&.current-item{
+			.text(18px);
+			display:block;
+			text-align: center;
+		& .main-menu__link{
+			text-decoration: none;
+		}
+		}
+		&:hover{
+			background-color:darken(@toggleMenuBackgroundColor, 10%);
+		}
+
+	}
+	&__link{
+		display:block;
+		color:@fontWhite;
+		padding:@menuPadding;
+		
+	}
+	
+	&__item-ico{}
+}

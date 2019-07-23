@@ -10,12 +10,15 @@
 
 
 <body>
+  <h1 class="visually-hidden">Barbershop Бородинский</h1>
+  <div class="align-flex-container">
     <div class="container">
        <header class="header">
-           <img src="svg/logotype-mobile.svg" alt="" class="header__logo-image">
+           <img src="src/svg/logotype-mobile.svg.svg" alt="" class="header__logo-image">
            <div class="header__main-menu main-menu">
+            <div class="main-menu__toggle-button"><img src="src/svg/menu-icon.svg.svg" alt="" class="main-menu__toggle-button-icon"></div>
                <ul class="main-menu__nav-menu">
-                    <li class="main-menu__item">
+                    <li class="main-menu__item current-item">
                         <a href="" class="main-menu__link">
                             <span class="main-menu__item-lable">Главная</span>
                         </a>
@@ -44,14 +47,14 @@
                <ul class="main-menu__user-menu">
                     <li class="main-menu__item">
                         <a href="" class="main-menu__link">
-                            <span class="main-menu__item-lable"><img src="svg/login.svg" alt="" class="main-menu__item-ico">Войти</span>
+                            <span class="main-menu__item-lable"><img src="src/svg/login.svg" alt="" class="main-menu__item-ico">Войти</span>
                         </a>
                     </li>
                </ul>
            </div>
        </header>
        <div class="promo-banner">
-            <h2 class="promo-banner__header">Стрижка у нас это выгодно</h2>
+            <h2 class="promo-banner__header">Стрижка у нас это выгодно!</h2>
             <p class="promo-banner__paragraph">Мужская стрижка требует точного подхода. Обратимся к статистике</p>
             <ul class="promo-banner__list">
                 <li class="promo-banner_item">
@@ -182,6 +185,7 @@
         </footer>
 
     </div> <!-- /.container -->
+  </div> <!-- /. align-flex-container -->
 
     <!-- ::::::: SCRIPTS ::::::::: -->
     <script src="js/scripts.js"></script>

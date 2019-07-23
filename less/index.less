@@ -1,0 +1,30 @@
+@import "header.less";
+@import "container.less";
+@import "mixins.less";
+@import "promo_banner.less";
+/*::::::::::: @FONTS :::::::::::::*/
+@font-face {
+	font-family: "PT Sans Narrow";
+	src: url('src/fonts/web/ptsansnarrowbold.woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+
+/*:::::::::: @VARIABLES :::::::::::*/
+@backgroundImage: url("src/img/mainbg.jpg");
+@fontWhite: #fff;
+@font:"PT Sans Narrow";
+
+/*:::::::::: @MIXINS ::::::::::::::*/
+
+
+/*:::::::::: @STYLES :::::::::::::::::*/
+.visually-hidden{
+	position:absolute;
+	top:-10000px;
+}
+body{
+	background-color:#323232;
+	font-family:@font;
+	.resetMarginPadding();
+}
