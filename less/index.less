@@ -4,8 +4,14 @@
 @import "promo_banner.less";
 /*::::::::::: @FONTS :::::::::::::*/
 @font-face {
-	font-family: "PT Sans Narrow";
+	font-family: "PT Sans Narrow Bold";
 	src: url('src/fonts/web/ptsansnarrowbold.woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: "PT Sans Narrow Regular";
+	src: url('src/fonts/web/ptsansnarrow.woff2');
 	font-weight: 700;
 	font-style: normal;
 }
@@ -13,7 +19,9 @@
 /*:::::::::: @VARIABLES :::::::::::*/
 @backgroundImage: url("src/img/mainbg.jpg");
 @fontWhite: #fff;
-@font:"PT Sans Narrow";
+@fontBlack: #000;
+@fontBold:"PT Sans Narrow Bold";
+@fontRegular:"PT Sans Narrow Regular";
 
 /*:::::::::: @MIXINS ::::::::::::::*/
 
@@ -25,6 +33,6 @@
 }
 body{
 	background-color:#323232;
-	font-family:@font;
+	font-family:@fontBold;
 	.resetMarginPadding();
 }

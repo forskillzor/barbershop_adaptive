@@ -23,19 +23,96 @@
   border: 0;
   background-color: #fff;
   text-align: center;
+  padding-top: 10px;
 }
 .promo-banner__header {
   margin-top: 0px;
   color: #000;
   font-size: 30px;
   text-transform: uppercase;
+  line-height: 30px;
   width: 180px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+.promo-banner__paragraph {
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding: 0px 20px;
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+.promo-banner__list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #404040;
+  padding: 13px 20px;
+}
+.promo-banner__item:nth-child(2n) {
+  background-color: #4e4e4e;
+}
+.promo-banner__number {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__number .number__thousand {
+  display: inline-block;
+  margin-right: 10px;
+}
+.promo-banner__number .number__lie {
+  position: relative;
+  font-size: 22px;
+  left: 0px;
+  bottom: 15px;
+}
+.promo-banner__desc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: right;
+  width: 110px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-family: "PT Sans Narrow Regular";
+  line-height: 18px;
+}
+.promo-banner__lie {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 19px;
+  background-color: #242424;
+  color: #4a4a4a;
 }
 /*::::::::::: @FONTS :::::::::::::*/
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   src: url('src/fonts/web/ptsansnarrowbold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans Narrow Regular";
+  src: url('src/fonts/web/ptsansnarrow.woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -48,7 +125,7 @@
 }
 body {
   background-color: #323232;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   margin: 0;
   padding: 0;
   border: 0;
@@ -106,7 +183,7 @@ body {
 }
 .main-menu__item.current-item {
   font-size: 18px;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -177,7 +254,7 @@ body {
 }
 .main-menu__item.current-item {
   font-size: 18px;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -209,19 +286,96 @@ body {
   border: 0;
   background-color: #fff;
   text-align: center;
+  padding-top: 10px;
 }
 .promo-banner__header {
   margin-top: 0px;
   color: #000;
   font-size: 30px;
   text-transform: uppercase;
+  line-height: 30px;
   width: 180px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+.promo-banner__paragraph {
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding: 0px 20px;
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+.promo-banner__list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #404040;
+  padding: 13px 20px;
+}
+.promo-banner__item:nth-child(2n) {
+  background-color: #4e4e4e;
+}
+.promo-banner__number {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__number .number__thousand {
+  display: inline-block;
+  margin-right: 10px;
+}
+.promo-banner__number .number__lie {
+  position: relative;
+  font-size: 22px;
+  left: 0px;
+  bottom: 15px;
+}
+.promo-banner__desc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: right;
+  width: 110px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-family: "PT Sans Narrow Regular";
+  line-height: 18px;
+}
+.promo-banner__lie {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 19px;
+  background-color: #242424;
+  color: #4a4a4a;
 }
 /*::::::::::: @FONTS :::::::::::::*/
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   src: url('src/fonts/web/ptsansnarrowbold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans Narrow Regular";
+  src: url('src/fonts/web/ptsansnarrow.woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -234,7 +388,7 @@ body {
 }
 body {
   background-color: #323232;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   margin: 0;
   padding: 0;
   border: 0;
@@ -293,7 +447,7 @@ body {
 }
 .main-menu__item.current-item {
   font-size: 18px;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -325,19 +479,96 @@ body {
   border: 0;
   background-color: #fff;
   text-align: center;
+  padding-top: 10px;
 }
 .promo-banner__header {
   margin-top: 0px;
   color: #000;
   font-size: 30px;
   text-transform: uppercase;
+  line-height: 30px;
   width: 180px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+.promo-banner__paragraph {
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding: 0px 20px;
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+.promo-banner__list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #404040;
+  padding: 13px 20px;
+}
+.promo-banner__item:nth-child(2n) {
+  background-color: #4e4e4e;
+}
+.promo-banner__number {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__number .number__thousand {
+  display: inline-block;
+  margin-right: 10px;
+}
+.promo-banner__number .number__lie {
+  position: relative;
+  font-size: 22px;
+  left: 0px;
+  bottom: 15px;
+}
+.promo-banner__desc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: right;
+  width: 110px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-family: "PT Sans Narrow Regular";
+  line-height: 18px;
+}
+.promo-banner__lie {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 19px;
+  background-color: #242424;
+  color: #4a4a4a;
 }
 /*::::::::::: @FONTS :::::::::::::*/
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   src: url('src/fonts/web/ptsansnarrowbold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans Narrow Regular";
+  src: url('src/fonts/web/ptsansnarrow.woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -350,7 +581,7 @@ body {
 }
 body {
   background-color: #323232;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   margin: 0;
   padding: 0;
   border: 0;
@@ -409,7 +640,7 @@ body {
 }
 .main-menu__item.current-item {
   font-size: 18px;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   text-transform: uppercase;
   text-decoration: none;
   display: block;
@@ -437,8 +668,14 @@ body {
 }
 /*::::::::::: @FONTS :::::::::::::*/
 @font-face {
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   src: url('src/fonts/web/ptsansnarrowbold.woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "PT Sans Narrow Regular";
+  src: url('src/fonts/web/ptsansnarrow.woff2');
   font-weight: 700;
   font-style: normal;
 }
@@ -451,7 +688,7 @@ body {
 }
 body {
   background-color: #323232;
-  font-family: "PT Sans Narrow";
+  font-family: "PT Sans Narrow Bold";
   margin: 0;
   padding: 0;
   border: 0;
@@ -462,12 +699,83 @@ body {
   border: 0;
   background-color: #fff;
   text-align: center;
+  padding-top: 10px;
 }
 .promo-banner__header {
   margin-top: 0px;
   color: #000;
   font-size: 30px;
   text-transform: uppercase;
+  line-height: 30px;
   width: 180px;
-  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 18px;
+  margin-bottom: 15px;
+}
+.promo-banner__paragraph {
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding: 0px 20px;
+  margin-top: 0px;
+  margin-bottom: 26px;
+}
+.promo-banner__list {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  background-color: #404040;
+  padding: 13px 20px;
+}
+.promo-banner__item:nth-child(2n) {
+  background-color: #4e4e4e;
+}
+.promo-banner__number {
+  display: inline-block;
+  color: #fff;
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.promo-banner__number .number__thousand {
+  display: inline-block;
+  margin-right: 10px;
+}
+.promo-banner__number .number__lie {
+  position: relative;
+  font-size: 22px;
+  left: 0px;
+  bottom: 15px;
+}
+.promo-banner__desc {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  text-align: right;
+  width: 110px;
+  display: inline-block;
+  color: #fff;
+  font-size: 18px;
+  font-family: "PT Sans Narrow Regular";
+  line-height: 18px;
+}
+.promo-banner__lie {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  padding-bottom: 10px;
+  padding-top: 19px;
+  background-color: #242424;
+  color: #4a4a4a;
 }

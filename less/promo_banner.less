@@ -5,11 +5,71 @@
 	.resetMarginPadding();
 	background-color:#fff;
 	text-align: center;
+	padding-top:10px;
 
 	&__header{
 		margin-top:0px;
 		.headerText2();
 		width: 180px;
-		text-align:center;
+		margin-left:auto;
+		margin-right:auto;
+		margin-top:18px;
+		margin-bottom:15px;
+	}
+	&__paragraph{
+		.paragraphText(20px);
+		padding: 0px 20px;
+		margin-top:0px;
+		margin-bottom:26px;
+	}
+	&__list{
+		.resetMarginPadding();
+	}
+	&__item{
+		display:flex;
+		justify-content: space-between;
+		align-items:center;
+		background-color:#404040;
+		padding:13px 20px;
+		&:nth-child(2n){
+			background-color:#4e4e4e;
+		}
+	}
+	&__number{
+		display:inline-block;
+		color:@fontWhite;
+		font-size:40px;
+		.resetMarginPadding();
+		.number{
+			&__thousand{
+				display:inline-block;
+				margin-right: 10px;
+			}
+			&__lie{
+				position:relative;
+				font-size:22px;
+				left:0px;
+				bottom:15px;
+			}
+		}
+	}
+	&__desc{
+		.resetMarginPadding();
+		text-align: right;
+		width:110px;
+		display:inline-block;
+		color:#fff;
+		font-size:18px;
+		font-family: @fontRegular;
+		line-height:18px;
+	}
+	&__lie{
+		.resetMarginPadding();
+		.paragraphText(20px);
+		padding-bottom:10px;
+		padding-top:19px;
+		background-color:#242424;
+		color:#4a4a4a;
+
 	}
 }
