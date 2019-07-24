@@ -408,7 +408,7 @@
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -470,10 +470,10 @@
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -972,7 +972,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -1069,10 +1069,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -1574,7 +1574,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -1671,10 +1671,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -2152,7 +2152,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -2244,10 +2244,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -2660,7 +2660,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -2757,10 +2757,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -3308,7 +3308,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -3405,10 +3405,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -3886,7 +3886,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -3983,10 +3983,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -4356,7 +4356,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -4453,10 +4453,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -4956,7 +4956,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -5053,10 +5053,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -5525,7 +5525,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -5622,10 +5622,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -6198,7 +6198,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
@@ -6353,10 +6353,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -6816,10 +6816,10 @@ body {
   background-color: #383838;
 }
 .social-links__item:hover a svg path {
-  fill: #000;
+  fill: #d2d2d2;
 }
 .social-links__item:hover a {
-  color: #000;
+  color: #d2d2d2;
 }
 .social-links__link {
   font-family: "sans-serif";
@@ -6914,7 +6914,7 @@ body {
   width: 140px;
   height: 140px;
   border: 2px solid transparent;
-  border-radius: 100%;
+  border-radius: 50%;
   background-color: #d2d2d2;
 }
 .talk-about .slider__avatar > img {
