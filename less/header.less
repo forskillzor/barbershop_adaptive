@@ -1,9 +1,5 @@
-@backgroundImage: url("src/img/mainbg.jpg");
-@background: #242424;
-@toggleMenuBackgroundColor:#826550;
-@menuPadding: 10px 10px;
-
-@import "index.less";
+@import "var.less";
+@import "mixins.less";
 
 .header{
 	display:flex;
@@ -16,18 +12,19 @@
 	&__main-menu{
 		.resetMarginPadding();
 		height:50px;
-		
 	}
 }
 
 .main-menu{
-	background-color:@toggleMenuBackgroundColor;
+	background-color:@toggleMenuBg;
 	position:relative;
 	&__nav-menu{
 		.setListView();
+		.resetListStyle();
 	}
 	&__user-menu{
 		.setListView();
+		.resetListStyle();
 	}
 	&__item-lable{
 
@@ -41,30 +38,45 @@
 		height:50px;
 		background-color:#6a4d38;
 		padding: 15px 15px;
+		z-index: 5;
+		&:hover{
+			cursor:pointer;
+			background-color: lighten(#6a4d38,5%);
+		}
 	}
-	&__toggle-button-icon{}
+	&__toggle-button-icon{
+	}
 	&__item{
-		display:none;
+		opacity: 0;
+		z-index: -1;
+		box-sizing: border-box;
+		height: 50px;
+		text-align: center;
 		padding-left:0px;
-		&.current-item{
+		.text(18px);
+		background-color:@toggleMenuBg;
+		border-bottom: 1px solid darken(@toggleMenuBg, 10%);
+		box-shadow: 0px 1px 0px 0px lighten(@toggleMenuBg, 10%);
+		margin-bottom:1px;
+
+		&.displayed-item{
+			opacity: 1;
+			z-index: 1;
 			.text(18px);
 			display:block;
 			text-align: center;
+		}
 		& .main-menu__link{
 			text-decoration: none;
 		}
-		}
 		&:hover{
-			background-color:darken(@toggleMenuBackgroundColor, 10%);
+			background-color:darken(@toggleMenuBg, 10%);
 		}
-
 	}
 	&__link{
 		display:block;
 		color:@fontWhite;
 		padding:@menuPadding;
-		
 	}
-	
 	&__item-ico{}
 }
