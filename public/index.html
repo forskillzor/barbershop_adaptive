@@ -81,7 +81,7 @@
             <p class="promo-banner__lie">*- приведенные данные ложь</p>
        </div><!-- /.promo-banner -->
        <div class="edges">
-           <div class="slider">
+           <div class="slider" id="edges">
                <ul class="slider__slides">
                    <li class="slider__item active" id="edges__slide-1">
                        <img src="src/img/edges_ico_scisors.png" alt="" class="slider__item-ico">
@@ -131,24 +131,37 @@
            <button class="news__button button">Показать все</button>
        </div><!-- /.news -->
        <div class="talk-about">
-           <div class="slider">
+           <div class="slider" id="about">
             <h2 class="slider__header">Отзывы о нас</h2>
                <ul class="slider__slides">
                    <li class="slider__item active" id="about__slide-1">
 
                        <div class="slider__avatar">
-                         <img src="src/img/slider_image1.jpg" alt="" class="">
+                           <img src="src/img/slider_image1.jpg" alt="" class="slider__avatar-image">
+                            <a class="slider__avatar-link-bg" href="">
+                                <img src="src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
+                            </a>
                        </div>
                        <p class="slider__author">Трэвис Баркер</p>
                        <p class="slider__desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
                    </li>
                    <li class="slider__item" id="about__slide-2">
-                       <img src="" alt="" class="slider__avatar">
+                       <div class="slider__avatar">
+                           <img src="" alt="" >
+                           <a class="slider__avatar-link-bg" href="">
+                               <img src="src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
+                           </a>
+                       </div>
                        <p class="slider__author">Трэвис Баркер</p>
                        <p class="slider__desc">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
                    </li>
                    <li class="slider__item" id="about__slide-3">
-                       <img src="" alt="" class="slider__avatar">
+                       <div class="slider__avatar">
+                           <img src="" alt="">
+                           <a class="slider__avatar-link-bg" href="">
+                               <img src="src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
+                           </a>
+                       </div>
                        <p class="slider__author">Трэвис Баркер</p>
                        <p class="slider__desc">Наши мастера - прафессионалы своего дела не могут стоить дешего. К тому же, разве цена не дает определенный статус?</p>
                    </li>
@@ -201,6 +214,7 @@
 
     <!-- ::::::: SCRIPTS ::::::::: -->
     <script src="src/js/scripts.js"></script>
+    <script src="src/js/slider.js"></script>
     <!--<script src="src/js/jquery.js"></script>-->
 
 </body>

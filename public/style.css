@@ -402,10 +402,13 @@
   background-color: #242424;
   color: #4a4a4a;
 }
+#edges.slider {
+  height: 390px;
+}
 .slider {
   overflow: hidden;
-  position: relative;
   background-color: #242424;
+  position: relative;
 }
 .slider__slides {
   list-style: none;
@@ -415,7 +418,19 @@
   border: 0;
 }
 .slider__item {
-  display: none;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  opacity: 0;
+  transition: all .5s;
+}
+.slider__item.active {
+  opacity: 1;
+  color: #fff;
 }
 .slider__item-ico {
   -ms-flex-item-align: center;
@@ -451,18 +466,12 @@
   padding: 0px 45px;
   padding-right: 40px;
 }
-.slider__item.active {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-pack: start;
-      justify-content: flex-start;
-  color: #fff;
-}
 .slider__controls-wrapper {
+  position: absolute;
+  bottom: 0px;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 .slider__controls {
   list-style: none;
@@ -638,6 +647,7 @@
   color: #000;
 }
 .talk-about .slider__avatar {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
@@ -650,8 +660,34 @@
   border-radius: 50%;
   background-color: #d2d2d2;
 }
-.talk-about .slider__avatar > img {
+.talk-about .slider__avatar-image {
   margin-left: -25%;
+}
+.talk-about .slider__avatar-link-img {
+  opacity: 0;
+  position: absolute;
+  width: 50%;
+  z-index: 10;
+  transition: all 0.5s;
+}
+.talk-about .slider__avatar-link-bg {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.talk-about .slider__avatar-link-bg:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.talk-about .slider__avatar-link-bg:hover .slider__avatar-link-img {
+  opacity: 1;
 }
 .talk-about .slider__author {
   text-align: center;
@@ -1030,10 +1066,13 @@ body {
   position: absolute;
   top: -10000px;
 }
+#about.slider {
+  height: 450px;
+}
 .slider {
   overflow: hidden;
-  position: relative;
   background-color: #242424;
+  position: relative;
 }
 .slider__slides {
   list-style: none;
@@ -1043,7 +1082,19 @@ body {
   border: 0;
 }
 .slider__item {
-  display: none;
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  opacity: 0;
+  transition: all .5s;
+}
+.slider__item.active {
+  opacity: 1;
+  color: #fff;
 }
 .slider__item-ico {
   -ms-flex-item-align: center;
@@ -1079,18 +1130,123 @@ body {
   padding: 0px 45px;
   padding-right: 40px;
 }
-.slider__item.active {
+.slider__controls-wrapper {
+  position: absolute;
+  bottom: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+.slider__controls {
+  list-style: none;
+  padding-left: 0px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  width: 73px;
+  margin: 30px auto;
+  margin-bottom: 50px;
+}
+.slider__controls-bullit {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  width: 7px;
+  height: 7px;
+  transform: rotate(45deg);
+  border: 1px solid #fff;
+}
+.slider__controls-bullit:hover {
+  cursor: pointer;
+}
+.slider__controls-bullit.active {
+  background-color: #fff;
+}
+.slider__footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+}
+
+/*:::::::::: @VARIABLES :::::::::::*/
+/*:::::::::: @MIXINS ::::::::::::::*/
+.visually-hidden {
+  position: absolute;
+  top: -10000px;
+}
+#edges.slider {
+  height: 390px;
+}
+.slider {
+  overflow: hidden;
+  background-color: #242424;
+  position: relative;
+}
+.slider__slides {
+  list-style: none;
+  padding-left: 0px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.slider__item {
+  position: absolute;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
   -ms-flex-pack: start;
       justify-content: flex-start;
+  opacity: 0;
+  transition: all .5s;
+}
+.slider__item.active {
+  opacity: 1;
   color: #fff;
 }
+.slider__item-ico {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-top: 28px;
+  margin-bottom: 30px;
+  height: 94px;
+}
+.slider__header {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  color: #fff;
+  font-size: 30px;
+  text-transform: uppercase;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 12px;
+}
+.slider__desc {
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-family: "PT Sans Narrow Regular";
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  padding: 0px 45px;
+  padding-right: 40px;
+}
 .slider__controls-wrapper {
+  position: absolute;
+  bottom: 0px;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 .slider__controls {
   list-style: none;
@@ -1198,6 +1354,7 @@ body {
   color: #000;
 }
 .talk-about .slider__avatar {
+  position: relative;
   display: -ms-flexbox;
   display: flex;
   overflow: hidden;
@@ -1210,8 +1367,34 @@ body {
   border-radius: 50%;
   background-color: #d2d2d2;
 }
-.talk-about .slider__avatar > img {
+.talk-about .slider__avatar-image {
   margin-left: -25%;
+}
+.talk-about .slider__avatar-link-img {
+  opacity: 0;
+  position: absolute;
+  width: 50%;
+  z-index: 10;
+  transition: all 0.5s;
+}
+.talk-about .slider__avatar-link-bg {
+  position: absolute;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+}
+.talk-about .slider__avatar-link-bg:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+.talk-about .slider__avatar-link-bg:hover .slider__avatar-link-img {
+  opacity: 1;
 }
 .talk-about .slider__author {
   text-align: center;
