@@ -17,17 +17,7 @@ function edgesSlider(){
 		});
 	}
 }
-/*	var edges_button1 = document.querySelector("#edges__bullit-1");
-	var edges_button2 = document.querySelector("#edges__bullit-2");
-	var edges_button3 = document.querySelector("#edges__bullit-3");
 
-	var edges_slide1 = document.querySelector("#edges__slide-1");
-	var edges_slide2 = document.querySelector("#edges__slide-2");
-	var edges_slide3 = document.querySelector("#edges__slide-3");
-
-
-
-*/
 //::::::::::::::::::: SLIDER ABOUT :::::::::::::::::::::::::::::
 
 function aboutSlider(){
@@ -44,8 +34,6 @@ function aboutSlider(){
 		});
 	}
 }
-
-
 
 //::::::::::::::::::: MENU :::::::::::::::::::::::::
 
