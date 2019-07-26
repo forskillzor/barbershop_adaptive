@@ -9,11 +9,11 @@ var browerSync = require('browser-sync').create();
 var config = {
     paths: {
         less: './less/**/*.less',
-        html: './public/index.html'
+        html: './index.html'
     },
     output: {
         cssName: 'style.css',
-        path: './public/'
+        path: './'
     }
 };
 
