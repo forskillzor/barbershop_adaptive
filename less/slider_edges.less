@@ -1,0 +1,144 @@
+@import "var.less";
+@import "mixins.less";
+
+#edges.slider{
+	height: 390px;
+}
+.slider{
+	overflow: hidden;
+	position:relative;
+	background-color:@sliderBg;
+	position: relative;
+	&__slides{
+		.resetListStyle();
+		.resetMarginPadding();
+	}
+	&__item{
+		position: absolute;
+		.setColumnView();
+		opacity: 0;
+		transition: all .5s;
+
+		&-wrapper{
+			text-align: center;
+		}
+	}
+	&__item.active{
+		opacity: 1;
+
+		color:@fontWhite;
+	}
+	&__item-ico{
+		align-self:center;
+		margin-top:28px;
+		margin-bottom:30px;
+		height:94px;
+	}
+	&__header{
+		align-self:center;
+		.headerText2(20px,#fff);
+		.resetMarginPadding();
+		margin-bottom:12px;
+	}
+	&__desc{
+		text-align: center;
+		align-self:center;
+		.paragraphText(20px);
+		.resetMarginPadding();
+		padding:0px 45px;
+		padding-right:40px;
+	}
+	&__controls-wrapper{
+		position: absolute;
+		bottom:0px;
+		display:flex;
+		width:100%;
+	}
+	&__controls{
+		.resetListStyle();
+		.setRowView();
+		justify-content: space-between;
+		width:73px;
+		margin:30px auto;
+		margin-bottom:50px;
+	}
+	&__controls-bullit{
+		box-sizing:border-box;
+		display:block;
+		position:relative;
+		width:10px;
+		height:10px;
+		transform: rotate(45deg);
+		border:1px solid #fff;
+		&:hover{
+			cursor:pointer;
+		}
+	}
+	&__controls-bullit.active{
+		background-color:#fff;
+	}
+	&__footer{
+		width:100%;
+		position:absolute;
+		bottom:0px;
+	}
+}
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @tablet-width){
+	#edges.slider{
+		background-color: @containerColor;
+		height: auto;
+	}
+	#edges .slider{
+		&__slides{
+			position: relative;
+			padding-left:64px;
+			padding-right:64px;
+			padding-top:0px;
+			padding-bottom:49px;
+		}
+		&__item{
+			box-sizing: border-box;
+			height: 176px;
+			flex-direction: row;
+			position:relative;
+			opacity: 1;
+			color:@fontWhite;
+			border-bottom: 1px solid #494949;
+			margin-left: 30px;
+			margin-right:30px;
+
+			&:last-child{
+				border: 0;
+			}
+			&-wrapper{
+				text-align: left;
+			}
+		}
+		&__item-ico{
+			align-self: center;
+			margin-top:36px;
+			margin-left:0px;
+			margin-right: 35px;
+		}
+		&__header{
+			align-self:center;
+			.headerText2(30px,#fff);
+			.resetMarginPadding();
+			margin-top:40px;
+			margin-bottom:15px;
+		}
+		&__desc{
+			text-align: left;
+			.paragraphText(20px);
+			.resetMarginPadding();
+			padding:0px;
+		}
+		&__controls-wrapper{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,32 @@
+@import "var.less";
+@import "mixins.less";
+
+.about {
+	text-align: center;
+	padding-top:32px;
+	&__title{
+		.resetMarginPadding();
+		.whiteOnBlack();
+		text-align:center;
+		font-size:18px;
+		margin-bottom:12px;
+
+	}
+	&__address{
+		.resetMarginPadding();
+		.whiteOnBlack();
+		text-align:center;
+		font-size:18px;
+		font-family:"PT Sans Narrow Regular";
+		padding:0px 20px;
+		line-height:26px;
+		margin-bottom:20px
+	}
+	&__tel{
+		.whiteOnBlack();
+		border:1px solid #353535;
+		&:hover{
+			background-color: lighten(#353535, 1%);
+		}
+	}
+}

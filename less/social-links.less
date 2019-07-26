@@ -1,0 +1,37 @@
+@import "var.less";
+@import "mixins.less";
+
+@colorHoverText:#d2d2d2;
+
+.social-links{
+	.resetListStyle();
+	.setRowView();
+	justify-content: space-between;
+	align-content:center;
+	height:100px;
+	padding-top:10px;
+
+	&__item{
+		display:flex;
+		justify-content: space-around;
+		align-items:center;
+		width:100%;
+		border:1px solid #353535;
+		&:hover{
+			background-color:lighten(#353535, 1%);
+		}
+		&:hover  a svg path{
+			fill:@colorHoverText;
+		}
+		&:hover a{
+			color:@colorHoverText;
+		}
+	}
+	&__link{
+		font-family: "sans-serif";
+		font-weight:bold;
+		text-decoration: none;
+		color:#fff;
+		font-size:36px;
+	}
+}

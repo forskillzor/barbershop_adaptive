@@ -1,0 +1,247 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="public/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barbershop Home</title>
+</head>
+
+<body>
+  <h1 class="visually-hidden">Barbershop Бородинский</h1>
+  <div class="align-flex-container">
+    <div class="container">
+       <header class="header">
+           <img src="public/src/svg/index-logo-mobile.svg" alt="" class="header__logo-image-mobile">
+           <img src="public/src/svg/index-logo-tablet.svg" alt="" class="header__logo-image-tablet">
+           <img src="public/src/svg/index-logo-desktop.svg" alt="" class="header__logo-image-desktop">
+           <div class="header__main-menu main-menu">
+            <div class="main-menu__toggle-button"><img src="public/src/svg/menu-icon.svg.svg" alt="" class="main-menu__toggle-button-icon"></div>
+               <ul class="main-menu__nav-menu">
+                    <li class="main-menu__item displayed-item">
+                        <a href="" class="main-menu__link">
+                            <span class="main-menu__item-lable">Главная</span>
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link">
+                            <span class="main-menu__item-lable">Наши работы</span>
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link">
+                            <span class="main-menu__item-lable">Записаться</span>
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link">
+                            <span class="main-menu__item-lable">Контакты</span>
+                        </a>
+                    </li>
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link">
+                            <span class="main-menu__item-lable">HTML academy</span>
+                        </a>
+                    </li>
+               </ul>
+               <ul class="main-menu__user-menu">
+                    <li class="main-menu__item">
+                        <a href="" class="main-menu__link">
+                            <img src="public/src/svg/login.svg" alt="" class="main-menu__item-ico">
+                            <span class="main-menu__item-lable">Войти</span>
+                        </a>
+                    </li>
+               </ul>
+           </div><!-- /.main-menu -->
+       </header>
+       <div class="promo-banner">
+           <div class="promo-banner__header-container">
+                <h2 class="promo-banner__header">Стрижка у нас это выгодно!</h2>
+                <p class="promo-banner__paragraph">Мужская стрижка требует точного подхода. Обратимся к статистике</p>
+            </div>
+            <ul class="promo-banner__list">
+                <li class="promo-banner__item">
+                    <p class="promo-banner__number">
+                        <span class="number__thousand">1</span>500 <span class="number__lie">*</span></p>
+                    <p class="promo-banner__desc">рублей вложений</p>
+                </li>
+                <li class="promo-banner__item">
+                    <p class="promo-banner__number">
+                        <span class="number__thousand">7</span>200 <span class="number__lie"></span></p>
+                    <p class="promo-banner__desc">секунд времени мастера</p>
+                </li>
+                <li class="promo-banner__item">
+                    <p class="promo-banner__number">
+                        <span class="number__thousand">90</span>000 <span class="number__lie"></span></p>
+                    <p class="promo-banner__desc">постриженных волос</p>
+                </li>
+                <li class="promo-banner__item">
+                    <p class="promo-banner__number">
+                        <span class="number__thousand">500</span>000 <span class="number__lie">*</span></p>
+                    <p class="promo-banner__desc">лайков и комплиментов</p>
+                </li>
+            </ul><!-- /.promo-banner__list -->
+            <p class="promo-banner__lie">*- приведенные данные ложь</p>
+       </div><!-- /.promo-banner -->
+       <div class="edges">
+           <div class="slider" id="edges">
+               <ul class="slider__slides">
+                   <li class="slider__item active" id="edges__slide-1">
+                       <img src="public/src/img/edges_ico_scisors.png" alt="" class="slider__item-ico">
+                       <div class="slider__item-wrapper">
+                           <h3 class="slider__header">Быстро</h3>
+                           <p class="slider__desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
+                       </div><!-- /.wrapper -->
+                   </li>
+                   <li class="slider__item" id="edges__slide-2">
+                       <img src="public/src/img/edges_ico_chair.png" height="88" width="95" alt="" class="slider__item-ico">
+                       <div class="slider__item-wrapper">
+                           <h3 class="slider__header">Круто</h3>
+                           <p class="slider__desc">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+                       </div><!-- /.wrapper -->
+                   </li>
+                   <li class="slider__item" id="edges__slide-3">
+                       <img src="public/src/img/edges_ico_bar.png" height="91" width="95" alt="" class="slider__item-ico">
+                       <div class="slider__item-wrapper">
+                           <h3 class="slider__header">Дорого</h3>
+                           <p class="slider__desc">Наши мастера - прафессионалы своего дела не могут стоить дешего. К тому же, разве цена не дает определенный статус?</p>
+                        </div><!-- /.wrapper -->
+                   </li>
+               </ul>
+               <div class="slider__controls-wrapper">
+                   <ul class="slider__controls">
+                       <li class="slider__controls-bullit active" id="edges__bullit-1"></li>
+                       <li class="slider__controls-bullit" id="edges__bullit-2"></li>
+                       <li class="slider__controls-bullit" id="edges__bullit-3"></li>
+                   </ul>
+               </div>
+               <img src="public/src/img/slider_light_footer.png" alt="" class="slider__footer">
+
+           </div><!-- /.slider -->
+       </div><!-- /.edges -->
+       <div class="news">
+            <h2 class="news__header">Новости и Акции</h2>
+            <div class="news__article">
+                <div class="news__date">
+                    <span class="news__date-day">29</span>
+                    <span class="news__date-month">сент</span>
+                    <img src="public/src/img/news_date_footer.png" alt="" class="news__date-ico">
+                </div><!-- /. news__date-->
+                <p class="news__paragraph">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            </div><!-- /.news__article -->
+            <div class="news__article">
+                <div class="news__date">
+                    <span class="news__date-day">19</span>
+                    <span class="news__date-month">сент</span>
+                    <img src="public/src/img/news_date_footer.png" alt="" class="news__date-ico">
+                </div><!-- /. news__date-->
+                <p class="news__paragraph">В нашей коменде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+            </div><!-- /.news__article -->
+            <button class="news__button button">Показать все</button>
+        </div><!-- /.news -->
+        <div class="talk-about">
+            <div class="slider" id="about">
+            <div class="slider__header-wrapper">
+                 <h2 class="slider__header">Отзывы о нас</h2>
+                 <button class="slider__button button">Оставить свой</button>
+             </div><!-- /.wrapper -->
+             <div class="slider__slides-wrapper">
+                 <div class="slider__button-arrow" id="prev">
+                     <img src="public/src/img/left-arrow.png" alt="" class="">
+                 </div>
+                <ul class="slider__slides">
+                    <li class="slider__item active" id="about__slide-1">
+                       <div class="slider__avatar">
+                           <img src="public/src/img/slider_image1.jpg" alt="" class="slider__avatar-image">
+                            <a class="slider__avatar-link-bg" href="">
+                                <img src="public/src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
+                            </a>
+                       </div>
+                       <div class="slider__message-wrapper">
+                           <p class="slider__author">Трэвис Баркер</p>
+                           <p class="slider__desc">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                        </div><!-- /.message-wrapper -->
+                   </li>
+                   <li class="slider__item" id="about__slide-2">
+                       <div class="slider__avatar">
+                           <img src="" alt="" >
+                           <a class="slider__avatar-link-bg" href="">
+                               <img src="public/src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
+                           </a>
+                       </div>
+                       <div class="slider__message-wrapper">
+                           <p class="slider__author">Джонатан Уолкер</p>
+                           <p class="slider__desc">Отличная молодежная стрижка! Решил поехать на метро, заскочил постричься!</p>
+                        </div><!-- /.message-wrapper -->
+                   </li>
+                   <li class="slider__item" id="about__slide-3">
+                       <div class="slider__avatar">
+                           <img src="" alt="">
+                           <a class="slider__avatar-link-bg" href="">
+                               <img src="public/src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
+                           </a>
+                       </div>
+                        <div class="slider__message-wrapper">
+                           <p class="slider__author">Джорж Акерман</p>
+                           <p class="slider__desc">Невероятно, чуваки вы самые курые! Теперь всегда буду к вам приходить!</p>
+                        </div><!-- /.message-wrapper -->
+                   </li>
+               </ul><!--  -->
+               <div class="slider__button-arrow" id="next">
+                   <img src="public/src/img/right-arrow.png" alt="">
+               </div>
+               <div class="slider__controls-wrapper">
+                   <ul class="slider__controls">
+                       <li class="slider__controls-bullit active" id="about__bullit-1"></li>
+                       <li class="slider__controls-bullit" id="about__bullit-2"></li>
+                       <li class="slider__controls-bullit" id="about__bullit-3"></li>
+                   </ul>
+               </div>
+               </div><!-- /.slides-wrapper -->
+               <img src="public/src/img/slider_dark_footer.png" alt="" class="slider__footer">
+           </div><!-- /.slider -->
+       </div> <!-- /.talk-about -->
+
+        <footer class="footer">
+            <div class="footer__about about">
+                <p class="about__title">Барбершоп Бородинский</p>
+                <p class="about__address">г. Свнкт-Петербург, ул Большая Конюшенная 19/8</p>
+                <button class="about__tel button">+7 (812) 555-66-66</button>
+            </div><!-- /.footer__about about -->
+
+            <div class="footer__social-links">
+                <ul class="social-links">
+                    <li class="social-links__item">
+                        <p class="social-links__link-label visually-hidden">вконтакте</p>
+                        <a href="" class="social-links__link">B</a>
+                    </li>
+                    <li class="social-links__item">
+                        <p class="social-links__link-label visually-hidden">фейсбук</p>
+                        <a href="" class="social-links__link"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="39" viewBox="0 0 18 39"><g><g><path fill="#b8b8b8" d="M11.903 38.223H4.016V19.158H.074v-6.572h3.942V8.642c0-5.36 2.226-8.548 8.546-8.548h5.265v6.572h-3.29c-2.461 0-2.624.918-2.624 2.632l-.01 3.288h5.961l-.698 6.572h-5.263z"/><path fill="#fff" d="M11.903 38.223H4.016V19.158H.074v-6.572h3.942V8.642c0-5.36 2.226-8.548 8.546-8.548h5.265v6.572h-3.29c-2.461 0-2.624.918-2.624 2.632l-.01 3.288h5.961l-.698 6.572h-5.263z"/></g></g></svg></a>
+                    </li>
+                    <li class="social-links__item">
+                        <p class="social-links__link-label visually-hidden">инстаграм</p>
+                        <a href="" class="social-links__link"><svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 20 20"><path d="M18 0H2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-8 6a4 4 0 1 1-4 4 4 4 0 0 1 4-4zM2.5 18a.47.47 0 0 1-.5-.5V9h2.1a3.4 3.4 0 0 0-.1 1 6 6 0 1 0 12 0 3.4 3.4 0 0 0-.1-1H18v8.5a.47.47 0 0 1-.5.5zM18 4.5a.47.47 0 0 1-.5.5h-2a.47.47 0 0 1-.5-.5v-2a.47.47 0 0 1 .5-.5h2a.47.47 0 0 1 .5.5z" fill="#fff"/></svg></a>
+                    </li>
+                </ul>
+            </div><!-- /.footer__social-links -->
+
+            <div class="footer__copyright">
+                <div class="copyright">
+                  <p class="copyright__by">Разработанно:</p>
+                  <a class="copyright__button button" href="" >HTML Academy</a>
+                </div><!-- /. -->
+            </div><!-- /.copyright -->
+        </footer>
+
+    </div> <!-- /.container -->
+  </div> <!-- /. align-flex-container -->
+
+    <!-- ::::::: SCRIPTS ::::::::: -->
+    <script src="public/src/js/scripts.js"></script>
+    <script src="public/src/js/slider.js"></script>
+    <!--<script src="public/src/js/jquery.js"></script>-->
+
+</body>
+</html>

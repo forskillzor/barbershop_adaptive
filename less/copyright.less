@@ -1,0 +1,23 @@
+@import "var.less";
+@import "mixins.less";
+
+.copyright{
+	.setColumnView();
+	align-items:center;
+	align-content:center;
+	text-align: center;
+	&__by{
+		.whiteOnBlack();
+		color:#fff;
+	}
+	&__button{
+		.whiteOnBlack();
+		.setCenter();
+		border:1px solid #353535;
+		&:hover{
+			background-color: lighten(#353535, 1%);
+		}
+
+	}
+
+}
