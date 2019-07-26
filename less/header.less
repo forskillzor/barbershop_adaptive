@@ -5,16 +5,21 @@
 	display:flex;
 	flex-direction:column;
 	background-color: @background;
-	&__logo-image{
+	&__logo-image-mobile{
 		margin-top:30px;
 		margin-bottom:25px;
+	}
+	&__logo-image-tablet{
+		display: none;
+	}
+	&__logo-image-desktop{
+		display: none;
 	}
 	&__main-menu{
 		.resetMarginPadding();
 		height:50px;
 	}
 }
-
 .main-menu{
 	background-color:@toggleMenuBg;
 	position:relative;
@@ -79,4 +84,89 @@
 		padding:@menuPadding;
 	}
 	&__item-ico{}
+}
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @tablet-width){
+	.header{
+		display:flex;
+		flex-direction:column;
+		background-image: url("src/img/mainbg.jpg");
+		background-position: center;
+		&__logo-image-mobile{
+			display: none;
+		}
+		&__logo-image-tablet{
+			order: 1;
+			display: block;
+			margin-top:40px;
+			margin-bottom:256px;
+		}
+		&__main-menu{
+			order:0;
+			.resetMarginPadding();
+		}
+	}
+	.main-menu{
+		//padding-top:12px;
+		//padding-bottom:10px;
+		padding-left:48px;
+		height: 72px;
+		display:flex;
+		justify-content: flex-start;
+		align-items: flex-start;
+		background-color: #000;
+		&__toggle-button{
+			display: none;
+		}
+		&__nav-menu{
+			display: flex;
+			flex-direction: row;
+			align-content: stretch;
+			align-items: stretch;
+			height: 100%;
+		}
+		&__user-menu{
+			display: flex;
+			height: 100%;
+
+			& .main-menu__item-lable{
+				display: none;
+			}
+		}
+		&__item{
+			display: flex;
+			height: 100%;
+			opacity: 1;
+			z-index: 1;
+			box-sizing: border-box;
+			text-align: center;
+			padding-left:6px;
+			padding-right:6px;
+			.text(18px);
+			background-color:transparent;
+			border:0;
+			box-shadow: none;
+			margin-bottom:0px;
+
+			&.displayed-item{
+				display: flex;
+			}
+		}
+		&__link{
+			height: 100%;
+			display: flex;
+			align-content:center;
+			align-items: center;
+			box-sizing: border-box;
+			text-decoration: none;
+			color:@fontWhite;
+			padding:@menuPadding;
+		}
+		&:hover{}
+		&__item-ico{}
+	}
 }

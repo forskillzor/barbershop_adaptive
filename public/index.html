@@ -13,9 +13,10 @@
   <div class="align-flex-container">
     <div class="container">
        <header class="header">
-           <img src="src/svg/logotype-mobile.svg.svg" alt="" class="header__logo-image">
+           <img src="src/svg/index-logo-mobile.svg" alt="" class="header__logo-image-mobile">
+           <img src="src/svg/index-logo-tablet.svg" alt="" class="header__logo-image-tablet">
+           <img src="src/svg/index-logo-desktop.svg" alt="" class="header__logo-image-desktop">
            <div class="header__main-menu main-menu">
-            <!-- <div class="menu-toggle-slider"></div> -->
             <div class="main-menu__toggle-button"><img src="src/svg/menu-icon.svg.svg" alt="" class="main-menu__toggle-button-icon"></div>
                <ul class="main-menu__nav-menu">
                     <li class="main-menu__item displayed-item">
@@ -47,15 +48,18 @@
                <ul class="main-menu__user-menu">
                     <li class="main-menu__item">
                         <a href="" class="main-menu__link">
-                            <span class="main-menu__item-lable"><img src="src/svg/login.svg" alt="" class="main-menu__item-ico">Войти</span>
+                            <img src="src/svg/login.svg" alt="" class="main-menu__item-ico">
+                            <span class="main-menu__item-lable">Войти</span>
                         </a>
                     </li>
                </ul>
            </div><!-- /.main-menu -->
        </header>
        <div class="promo-banner">
-            <h2 class="promo-banner__header">Стрижка у нас это выгодно!</h2>
-            <p class="promo-banner__paragraph">Мужская стрижка требует точного подхода. Обратимся к статистике</p>
+           <div class="promo-banner__header-container">
+                <h2 class="promo-banner__header">Стрижка у нас это выгодно!</h2>
+                <p class="promo-banner__paragraph">Мужская стрижка требует точного подхода. Обратимся к статистике</p>
+            </div>
             <ul class="promo-banner__list">
                 <li class="promo-banner__item">
                     <p class="promo-banner__number">
@@ -85,18 +89,24 @@
                <ul class="slider__slides">
                    <li class="slider__item active" id="edges__slide-1">
                        <img src="src/img/edges_ico_scisors.png" alt="" class="slider__item-ico">
-                       <h3 class="slider__header">Быстро</h3>
-                       <p class="slider__desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
+                       <div class="slider__item-wrapper">
+                           <h3 class="slider__header">Быстро</h3>
+                           <p class="slider__desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
+                       </div><!-- /.wrapper -->
                    </li>
                    <li class="slider__item" id="edges__slide-2">
                        <img src="src/img/edges_ico_chair.png" height="88" width="95" alt="" class="slider__item-ico">
-                       <h3 class="slider__header">Круто</h3>
-                       <p class="slider__desc">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+                       <div class="slider__item-wrapper">
+                           <h3 class="slider__header">Круто</h3>
+                           <p class="slider__desc">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+                       </div><!-- /.wrapper -->
                    </li>
                    <li class="slider__item" id="edges__slide-3">
                        <img src="src/img/edges_ico_bar.png" height="91" width="95" alt="" class="slider__item-ico">
-                       <h3 class="slider__header">Дорого</h3>
-                       <p class="slider__desc">Наши мастера - прафессионалы своего дела не могут стоить дешего. К тому же, разве цена не дает определенный статус?</p>
+                       <div class="slider__item-wrapper">
+                           <h3 class="slider__header">Дорого</h3>
+                           <p class="slider__desc">Наши мастера - прафессионалы своего дела не могут стоить дешего. К тому же, разве цена не дает определенный статус?</p>
+                        </div><!-- /.wrapper -->
                    </li>
                </ul>
                <div class="slider__controls-wrapper">
@@ -112,38 +122,46 @@
        </div><!-- /.edges -->
        <div class="news">
             <h2 class="news__header">Новости и Акции</h2>
-           <div class="news__article">
-              <div class="news__date">
-                <span class="news__date-day">29</span>
-                <span class="news__date-month">сент</span>
-                <img src="src/img/news_date_footer.png" alt="" class="news__date-ico">
-              </div><!-- /. news__date-->
-              <p class="news__paragraph">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
-           </div><!-- /.news__article -->
-           <div class="news__article">
-              <div class="news__date">
-                <span class="news__date-day">19</span>
-                <span class="news__date-month">сент</span>
-                 <img src="src/img/news_date_footer.png" alt="" class="news__date-ico">
-              </div><!-- /. news__date-->
-               <p class="news__paragraph">В нашей коменде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
-           </div><!-- /.news__article -->
-           <button class="news__button button">Показать все</button>
-       </div><!-- /.news -->
-       <div class="talk-about">
-           <div class="slider" id="about">
-            <h2 class="slider__header">Отзывы о нас</h2>
-               <ul class="slider__slides">
-                   <li class="slider__item active" id="about__slide-1">
-
+            <div class="news__article">
+                <div class="news__date">
+                    <span class="news__date-day">29</span>
+                    <span class="news__date-month">сент</span>
+                    <img src="src/img/news_date_footer.png" alt="" class="news__date-ico">
+                </div><!-- /. news__date-->
+                <p class="news__paragraph">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
+            </div><!-- /.news__article -->
+            <div class="news__article">
+                <div class="news__date">
+                    <span class="news__date-day">19</span>
+                    <span class="news__date-month">сент</span>
+                    <img src="src/img/news_date_footer.png" alt="" class="news__date-ico">
+                </div><!-- /. news__date-->
+                <p class="news__paragraph">В нашей коменде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
+            </div><!-- /.news__article -->
+            <button class="news__button button">Показать все</button>
+        </div><!-- /.news -->
+        <div class="talk-about">
+            <div class="slider" id="about">
+            <div class="slider__header-wrapper">
+                 <h2 class="slider__header">Отзывы о нас</h2>
+                 <button class="slider__button button">Оставить свой</button>
+             </div><!-- /.wrapper -->
+             <div class="slider__slides-wrapper">
+                 <div class="slider__button-arrow" id="prev">
+                     <img src="src/img/left-arrow.png" alt="" class="">
+                 </div>
+                <ul class="slider__slides">
+                    <li class="slider__item active" id="about__slide-1">
                        <div class="slider__avatar">
                            <img src="src/img/slider_image1.jpg" alt="" class="slider__avatar-image">
                             <a class="slider__avatar-link-bg" href="">
                                 <img src="src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
                             </a>
                        </div>
-                       <p class="slider__author">Трэвис Баркер</p>
-                       <p class="slider__desc">Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки.</p>
+                       <div class="slider__message-wrapper">
+                           <p class="slider__author">Трэвис Баркер</p>
+                           <p class="slider__desc">Спасибо за лысину! Был проездом в Москве, заскочил побриться, чтобы было видно новую татуировку!</p>
+                        </div><!-- /.message-wrapper -->
                    </li>
                    <li class="slider__item" id="about__slide-2">
                        <div class="slider__avatar">
@@ -152,8 +170,10 @@
                                <img src="src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
                            </a>
                        </div>
-                       <p class="slider__author">Трэвис Баркер</p>
-                       <p class="slider__desc">Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. Во всяком случае внешне.</p>
+                       <div class="slider__message-wrapper">
+                           <p class="slider__author">Джонатан Уолкер</p>
+                           <p class="slider__desc">Отличная молодежная стрижка! Решил поехать на метро, заскочил постричься!</p>
+                        </div><!-- /.message-wrapper -->
                    </li>
                    <li class="slider__item" id="about__slide-3">
                        <div class="slider__avatar">
@@ -162,10 +182,15 @@
                                <img src="src/svg/facebook.svg" alt="" class="slider__avatar-link-img">
                            </a>
                        </div>
-                       <p class="slider__author">Трэвис Баркер</p>
-                       <p class="slider__desc">Наши мастера - прафессионалы своего дела не могут стоить дешего. К тому же, разве цена не дает определенный статус?</p>
+                        <div class="slider__message-wrapper">
+                           <p class="slider__author">Джорж Акерман</p>
+                           <p class="slider__desc">Невероятно, чуваки вы самые курые! Теперь всегда буду к вам приходить!</p>
+                        </div><!-- /.message-wrapper -->
                    </li>
-               </ul>
+               </ul><!--  -->
+               <div class="slider__button-arrow" id="next">
+                   <img src="src/img/right-arrow.png" alt="">
+               </div>
                <div class="slider__controls-wrapper">
                    <ul class="slider__controls">
                        <li class="slider__controls-bullit active" id="about__bullit-1"></li>
@@ -173,6 +198,7 @@
                        <li class="slider__controls-bullit" id="about__bullit-3"></li>
                    </ul>
                </div>
+               </div><!-- /.slides-wrapper -->
                <img src="src/img/slider_dark_footer.png" alt="" class="slider__footer">
            </div><!-- /.slider -->
        </div> <!-- /.talk-about -->

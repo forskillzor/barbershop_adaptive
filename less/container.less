@@ -5,5 +5,14 @@
 	justify-content: center;
 }
 .container{
-	width:@containerWidth;
+	width:@mobile-width;
+	background-color: @cantainer;
+}
+
+
+@media (min-width: 768px){
+	.container{
+		width:@tablet-width;
+		background-color: @containerColor;
+	}
 }

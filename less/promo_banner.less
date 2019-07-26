@@ -6,6 +6,7 @@
 	background-color:#fff;
 	text-align: center;
 	padding-top:10px;
+	position: relative;
 
 	&__header{
 		margin-top:0px;
@@ -71,5 +72,125 @@
 		background-color:#242424;
 		color:#4a4a4a;
 
+	}
+}
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @tablet-width){
+	.promo-banner{
+		box-sizing: border-box;
+		width:640px;
+		margin-top:-185px;
+		.setColumnView();
+		padding-left:0px;
+		padding-right:0px;
+		margin-left:auto;
+		margin-right:auto;
+		padding-top:0px;
+
+		&__header-container{
+			order:0;
+			display: flex;
+			flex-direction: row;
+			box-sizing: border-box;
+
+			width:640px;
+			background-color:#fff;
+			margin-left:0px;
+			margin-right:auto;
+		}
+		&__list{
+			order:2;
+			display: flex;
+			flex-wrap: wrap;
+
+		}
+		&__lie{
+			order:1;
+			text-align:left;
+			padding-left:40px;
+			padding-bottom: 23px;
+			background-color: #fff;
+		}
+		&__item{
+			flex-grow: 1;
+			box-sizing: border-box;
+			width:300px;
+			height: 160px;
+			align-items: stretch;
+			padding-left:34px;
+			padding-top: 12px;
+
+			flex-direction: column;
+			justify-content: flex-start;
+
+			&:nth-child(1){
+				background-color: #404040;
+			}
+			&:nth-child(2){
+				background-color: #4e4e4e;
+			}
+			&:nth-child(3){
+				background-color: #353535;
+			}
+			&:nth-child(4){
+				background-color: #404040;
+			}
+		}
+		&__header{
+			.resetMarginPadding();
+			.headerText2(40px);
+			text-align: left;
+			box-sizing: border-box;
+			line-height: 40px;
+			padding-top:30px;
+			padding-left:40px;
+			padding-right:40px;
+			width:320px;
+			text-transform: none;
+		}
+		&__paragraph{
+			.resetMarginPadding();
+			.paragraphText(20px);
+			text-align: left;
+			box-sizing: border-box;
+			width:320px;
+			padding-top:35px;
+			padding-left:35px;
+			padding-right:60px;
+		}
+		&__number{
+			text-align: left;
+			display: block;
+			color:@fontWhite;
+			font-size:72px;
+			.resetMarginPadding();
+			.number{
+				&__thousand{
+					display:inline-block;
+					margin-right: 15px;
+				}
+				&__lie{
+					position:relative;
+					font-size:40px;
+					top: -25px;
+					right: 20px;
+					bottom:15px;
+				}
+			}
+		}
+		&__desc{
+			.resetMarginPadding();
+			text-align: left;
+			width:100%;
+			display:block;
+			color:#fff;
+			font-size:20px;
+			font-family: @fontRegular;
+			line-height:18px;
+		}
 	}
 }
