@@ -83,9 +83,9 @@
 		bottom:0px;
 	}
 }
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::
+//:::::::::: TABLET ::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::
 
 @media (min-width: @tablet-width){
 	#edges.slider{
@@ -139,6 +139,60 @@
 		}
 		&__controls-wrapper{
 			display: none;
+		}
+	}
+}
+//::::::::::::::::::::::::::::::::::::::
+//:::::::::: DESKTOP::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @desktop-width){
+	#edges .slider{
+		&__slides{
+			height: 300px;
+			padding-top:72px;
+			padding-bottom: 86px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: baseline;
+		}
+		&__item{
+			//flex-wrap: nowrap;
+			align-items: center;
+			width: 100%;
+			.resetMarginPadding();
+			height: auto;
+			flex-direction: column;
+			border-bottom:0;
+			border-right:1px solid #494949;
+			&:last-child{
+				border: 0;
+				padding-right:0px;
+			}
+			&__wrapper{
+			}
+		}
+		&__item-ico{
+			width:94px;
+			height: auto;
+			align-self: center;
+			margin-top:0px;
+			margin-left:0px;
+			margin-right: 0px;
+			margin-bottom:38px;
+		}
+		&__header{
+			text-align: center;
+			align-self:flex-start;
+			.headerText2(30px,#fff);
+			.resetMarginPadding();
+			margin-top:0px;
+			margin-bottom:10px;
+		}
+		&__desc{
+			width: 240px;
+			text-align: center;
 		}
 	}
 }

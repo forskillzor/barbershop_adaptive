@@ -26,8 +26,8 @@
 		margin-right:18px;
 		border-bottom:1px solid #e5ddd5;
 
-		&:last-child{
-			margin-bottom:0px;
+		&:nth-child(4){
+			display: none;
 		}
 	}
 	&__date{
@@ -78,33 +78,65 @@
 }
 
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::: TABLET :::::::::::::::::::::::::::::::::
 //::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 @media (min-width: @tablet-width){
 	.news{
 		justify-content: space-between;
+		flex-direction: row;
 		align-items:flex-start;
 		padding-top:50px;
 		padding-left: 64px;
 		padding-right: 64px;
-		.setRowView();
 		flex-wrap: wrap;
 
 		&__header{
 			.headerText2(40px);
 			order:-2;
 			margin-bottom: 60px;
+			align-self:flex-start;
 		}
 		&__button{
+			align-self: baseline;
+			margin-bottom: 0px;
 			width: 160px;
-
 			order:-1;
 		}
 		&__article{
-			width:50%;
-			border:0;
 			margin:0px;
+			width:50%;
+		}
+	}
+}
+//::::::::::::::::::::::::::::::::::::::
+//:::::::::: DESKTOP::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @desktop-width){
+	.news{
+		padding-top:63px;
+		&__header{
+			text-align: left;
+			padding-left:70px;
+			width:50%;
+		}
+		&__article{
+			display: flex;
+			width:33%;
+			&:nth-child(4){
+				display: flex;
+			}
+		}
+		&__button{
+			margin-right:0px;
+			margin-bottom:0px;
+			margin-top:0spx;
+		//	padding-right:25px;
+		//	padding-left:25px;
+		}
+		&__paragraph{
+			width:70%;
 		}
 	}
 }

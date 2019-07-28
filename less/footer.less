@@ -1,10 +1,84 @@
 @import "var.less";
+@import "mixins.less";
 
 .footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap:wrap;
 	border-top:1px solid #353535;
 	background-color:@darkBackground;
-	&__about{}
-	&__social-links{}
-	&__copyright{}
+	&__about{
+		padding-top:20px;
+		width: 100%;
+		flex-grow: 1;
+		order: 0;
+	}
+	&__social-links{
+		width: 100%;
+		flex-grow: 0;
+		order: 1;
+	}
+	&__copyright{
+		width: 100%;
+		flex-grow: 1;
+		order: 2;
+	}
 	padding-bottom:50px;
+}
+
+//::::::::::::::::::::::::::::::::::::::::::
+//:::::::::: TABLET ::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @tablet-width){
+	.footer{
+		flex-wrap:wrap;
+		padding-left:64px;
+		padding-right:64px;
+		padding-top:15px;
+		align-items: baseline;
+		&__about{
+			width: 50%;
+			order:0;
+			flex-grow: 0;
+			text-align: left;
+		}
+		&__copyright{
+			width: 50%;
+			width: auto;
+			order:1;
+			flex-grow: 0;
+		}
+		&__social-links{
+			//width: 30%;
+			order:2;
+		}
+	}
+}
+
+//::::::::::::::::::::::::::::::::::::::::::
+//:::::::::: DESKTOP :::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @desktop-width){
+.footer{
+	align-items: flex-start;
+	padding-top:50px;
+	&__about{
+		width:320px;
+		padding-top:0px;
+		box-sizing: border-box;
+		order: 0;
+	}
+	&__social-links{
+		width: 160px;
+		flex-grow: 0;
+		order: 1;
+	}
+	&__copyright{
+		align-content: flex-end;
+		order: 2;
+	}
+}
 }

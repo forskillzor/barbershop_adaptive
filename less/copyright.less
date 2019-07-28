@@ -14,10 +14,40 @@
 		.whiteOnBlack();
 		.setCenter();
 		border:1px solid #353535;
+		height: 49px;
 		&:hover{
 			background-color: lighten(#353535, 1%);
 		}
-
 	}
+}
 
+//:::::::::::::::::::::::::::::::::::::::
+//:::::::::: TABLET :::::::::::::::::::::
+//:::::::::::::::::::::::::::::::::::::::
+
+@media (min-width:@tablet-width){
+	.copyright{
+		&__by{
+			font-family: "PT Sans Narrow Regular";
+			font-size:18px;
+		}
+		&__button{
+			margin-top: 0px;
+			width:155px;
+		}
+	}
+}
+//:::::::::::::::::::::::::::::::::::::::
+//:::::::::: DESKTOP :::::::::::::::::::::
+//:::::::::::::::::::::::::::::::::::::::
+
+@media (min-width:@desktop-width){
+	.copyright{
+		align-items: flex-end;
+		&__by{
+			width: 155px;
+			margin-top:0px;
+			margin-bottom:13px;
+		}
+	}
 }

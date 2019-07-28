@@ -10,9 +10,14 @@
 }
 
 
-@media (min-width: 768px){
+@media (min-width: @tablet-width){
 	.container{
 		width:@tablet-width;
 		background-color: @containerColor;
+	}
+}
+@media (min-width: @desktop-width){
+	.container{
+		width:@desktop-width;
 	}
 }

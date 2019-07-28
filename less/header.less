@@ -94,8 +94,9 @@
 	.header{
 		display:flex;
 		flex-direction:column;
-		background-image: url("src/img/mainbg.jpg");
-		background-position: center;
+		background-position: center 0;
+		background-size: cover;
+		background-image: url("../img/mainbg.jpg");
 		&__logo-image-mobile{
 			display: none;
 		}
@@ -169,4 +170,77 @@
 		&:hover{}
 		&__item-ico{}
 	}
+}
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//:::::::::::::::::::::::: DESKTOP :::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+
+@media (min-width: @desktop-width){
+	.header{
+		height: 720px;
+		background-position: top;
+		background-size: auto;
+		&__logo-image-mobile{
+		}
+		&__logo-image-tablet{
+			display: none;
+		}
+		&__logo-image-desktop{
+			align-self: center;
+			margin-top:57px;
+			margin-bottom:10px;
+			order: 1;
+			display: block;
+		}
+
+	}
+	.main-menu{
+		justify-content: space-between;
+		padding-left: 62px;
+		&__item{
+			padding-left:22px;
+			padding-right:22px;
+		}
+		&__item-lable{
+			display: inline-block;
+		}
+		&__user-menu{
+			padding-right: 54px;
+			& .main-menu__item-lable{
+				display: inline-block;
+				margin-left: 15px;
+			}
+		}
+	}
+	/*.main-menu{
+		&__nav-menu{
+			.setListView();
+			.resetListStyle();
+		}
+		&__user-menu{
+			.setListView();
+			.resetListStyle();
+		}
+		&__item-lable{
+
+		}
+		&__toggle-button{
+			&:hover{
+			}
+		}
+		&__toggle-button-icon{
+		}
+		&__item{
+			&.displayed-item{
+			}
+			& .main-menu__link{
+			}
+			&:hover{
+			}
+		}
+		&__link{
+		}
+		&__item-ico{}
+	}*/
 }

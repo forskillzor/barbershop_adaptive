@@ -29,12 +29,7 @@
 
 		color:@fontWhite;
 	}
-	&__item-ico{
-		align-self:center;
-		margin-top:28px;
-		margin-bottom:30px;
-		height:94px;
-	}
+
 	&__header{
 		align-self:center;
 		.headerText2(@fontBlack);
@@ -91,12 +86,12 @@
 		bottom:0px;
 	}
 }
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::
+//:::::::::::: TABLET ::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::
 @media (min-width: @tablet-width){
 	#about.slider{
-		height: 356px;
+		height: 319px;
 		padding-left:64px;
 		padding-right:64px;
 		padding-top:35px;
@@ -185,6 +180,79 @@
 			position: absolute;
 			bottom:-15px;
 			left:40%;
+			display:flex;
+			width:125px;
+			height: 30px;
+			margin-left:auto;
+			margin-right:auto;
+			background-color:@lightBackground;
+		}
+		&__footer{
+			display: none;
+		}
+	}
+}
+//::::::::::::::::::::::::::::::::::::::::
+//:::::::::::: DESKTOP :::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::::::
+@media (min-width: @desktop-width){
+	#about.slider{
+		padding-bottom: 25px;
+	}
+	#about .slider{
+		&__slides{
+			display: flex;
+			width:540px;
+			height: 160px;
+		}
+		&__header{
+			padding-left: 60px;
+		}
+		&__slides-wrapper{}
+		&__item{
+			display: flex;
+			position: absolute;
+			top:0px;
+			left:50px;
+			.setRowView();
+			opacity: 0;
+			transition: all .5s;
+		}
+		&__avatar{
+			display: flex;
+			margin-left: 30px;
+			align-self:center;
+			width: 250px;
+			height: 160px;
+			border-radius: 5px;
+		}
+		&__message-wrapper{
+			padding-left: 15px;
+		}
+		&__author{
+			font-size: 26px;
+			text-align: left;
+			padding-left: 45px;
+			margin-top:20px;
+			margin-bottom:10px;
+		}
+		&__desc{
+			font-size: 18px;
+			text-align: left;
+			width:400px;
+			padding-right:0px;
+		}
+		&__controls{
+			.resetMarginPadding();
+		}
+		&__controls-wrapper{
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			align-content: center;
+			position: absolute;
+			bottom:-15px;
+			left:45%;
 			display:flex;
 			width:125px;
 			height: 30px;

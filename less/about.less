@@ -3,14 +3,12 @@
 
 .about {
 	text-align: center;
-	padding-top:32px;
 	&__title{
 		.resetMarginPadding();
 		.whiteOnBlack();
 		text-align:center;
 		font-size:18px;
 		margin-bottom:12px;
-
 	}
 	&__address{
 		.resetMarginPadding();
@@ -25,8 +23,37 @@
 	&__tel{
 		.whiteOnBlack();
 		border:1px solid #353535;
+		box-sizing: border-box;
+		width: 280px;
 		&:hover{
 			background-color: lighten(#353535, 1%);
+		}
+	}
+}
+
+//:::::::::::::::::::::::::::::::::::::::
+//:::::::::: TABLET :::::::::::::::::::::
+//:::::::::::::::::::::::::::::::::::::::
+
+@media (min-width:@tablet-width){
+	.about{
+		text-align: left;
+		&__title{
+			text-align: left;
+			text-transform: uppercase;
+		}
+		&__address{
+			width:100%;
+			text-align: left;
+			padding-left: 0px;
+			margin-bottom:10px;
+		}
+		&__tel{
+			text-align: left;
+			border:0px;
+			.resetMarginPadding();
+			width: 150px;
+			height: 24px;;
 		}
 	}
 }

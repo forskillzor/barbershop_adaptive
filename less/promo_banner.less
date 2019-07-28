@@ -71,13 +71,12 @@
 		padding-top:19px;
 		background-color:#242424;
 		color:#4a4a4a;
-
 	}
 }
 
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-//:::::::::::::::::::::::: 768 :::::::::::::::::::::::::::::::::
-//::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::
+//::::::::: TABLET :::::::::::::::::::
+//::::::::::::::::::::::::::::::::::::
 
 @media (min-width: @tablet-width){
 	.promo-banner{
@@ -191,6 +190,29 @@
 			font-size:20px;
 			font-family: @fontRegular;
 			line-height:18px;
+		}
+	}
+}
+
+//::::::::::::::::::::::::::::::::::
+//::::::: DESKTOP ::::::::::::::::::
+//::::::::::::::::::::::::::::::::::
+
+@media (min-width:@desktop-width){
+	.promo-banner{
+		flex-direction: row;
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:-160px;
+		&__header-container{
+			width:320px;
+			flex-direction: column;
+		}
+		&__list{
+		}
+		&__lie{
+			display: none;
 		}
 	}
 }

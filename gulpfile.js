@@ -14,6 +14,7 @@ var config = {
     output: {
         cssName: 'style.css',
         path: './'
+
     }
 };
 
@@ -25,7 +26,7 @@ gulp.task('less', function() {
         .pipe(autoprefixer())
         //.pipe(cleanCss())
        // .pipe(sourcemaps.write())
-        .pipe(gulp.dest(config.output.path))
+        .pipe(gulp.dest(config.output.path+"/public/src/css/"))
         .pipe(browerSync.stream());
 });
 

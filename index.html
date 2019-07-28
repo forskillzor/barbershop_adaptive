@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="public/style.css" />
+<link rel="stylesheet" type="text/css" href="public/src/css/style.css" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Barbershop Home</title>
 </head>
@@ -15,7 +15,7 @@
        <header class="header">
            <img src="public/src/svg/index-logo-mobile.svg" alt="" class="header__logo-image-mobile">
            <img src="public/src/svg/index-logo-tablet.svg" alt="" class="header__logo-image-tablet">
-           <img src="public/src/svg/index-logo-desktop.svg" alt="" class="header__logo-image-desktop">
+           <img src="public/src/svg/index-logo-desktop.svg" alt="" class="header__logo-image-desktop" width="370px" height="153px">
            <div class="header__main-menu main-menu">
             <div class="main-menu__toggle-button"><img src="public/src/svg/menu-icon.svg.svg" alt="" class="main-menu__toggle-button-icon"></div>
                <ul class="main-menu__nav-menu">
@@ -120,26 +120,34 @@
 
            </div><!-- /.slider -->
        </div><!-- /.edges -->
-       <div class="news">
+       <ul class="news" id="news">
             <h2 class="news__header">Новости и Акции</h2>
-            <div class="news__article">
+            <li class="news__article">
                 <div class="news__date">
                     <span class="news__date-day">29</span>
                     <span class="news__date-month">сент</span>
                     <img src="public/src/img/news_date_footer.png" alt="" class="news__date-ico">
                 </div><!-- /. news__date-->
                 <p class="news__paragraph">Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки.</p>
-            </div><!-- /.news__article -->
-            <div class="news__article">
+            </li><!-- /.news__article -->
+            <li class="news__article">
                 <div class="news__date">
                     <span class="news__date-day">19</span>
                     <span class="news__date-month">сент</span>
                     <img src="public/src/img/news_date_footer.png" alt="" class="news__date-ico">
                 </div><!-- /. news__date-->
-                <p class="news__paragraph">В нашей коменде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды. Спешите записаться!</p>
-            </div><!-- /.news__article -->
+                <p class="news__paragraph">В нашей коменде пополнение, Борис "Бритва" Стригунец, пополнил наши стройные ряды. Спешите записаться!</p>
+            </li><!-- /.news__article -->
+            <li class="news__article">
+                <div class="news__date">
+                    <span class="news__date-day">9</span>
+                    <span class="news__date-month">сент</span>
+                    <img src="public/src/img/news_date_footer.png" alt="" class="news__date-ico">
+                </div><!-- /. news__date-->
+                <p class="news__paragraph">Все дорожает, а наши стрижки нет. Как так? Приходите, постригитесь и узнаете, в чем подвох!</p>
+            </li>
             <button class="news__button button">Показать все</button>
-        </div><!-- /.news -->
+        </ul><!-- /.news -->
         <div class="talk-about">
             <div class="slider" id="about">
             <div class="slider__header-wrapper">
@@ -210,7 +218,15 @@
                 <button class="about__tel button">+7 (812) 555-66-66</button>
             </div><!-- /.footer__about about -->
 
+            <div class="footer__copyright">
+                <div class="copyright">
+                    <p class="copyright__by">Разработанно:</p>
+                    <a class="copyright__button button" href="" >HTML Academy</a>
+                </div><!-- /. -->
+            </div><!-- /.copyright -->
+
             <div class="footer__social-links">
+                <p class="social-links__header">Давайте дружить!</p>
                 <ul class="social-links">
                     <li class="social-links__item">
                         <p class="social-links__link-label visually-hidden">вконтакте</p>
@@ -227,12 +243,6 @@
                 </ul>
             </div><!-- /.footer__social-links -->
 
-            <div class="footer__copyright">
-                <div class="copyright">
-                  <p class="copyright__by">Разработанно:</p>
-                  <a class="copyright__button button" href="" >HTML Academy</a>
-                </div><!-- /. -->
-            </div><!-- /.copyright -->
         </footer>
 
     </div> <!-- /.container -->
